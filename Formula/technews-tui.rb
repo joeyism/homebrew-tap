@@ -5,21 +5,21 @@
 class TechnewsTui < Formula
   desc "A terminal UI for Hacker News and Reddit"
   homepage "https://github.com/joeyism/technews-tui"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joeyism/technews-tui/releases/download/v0.2.1/technews-tui_0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "0c1d13ab3aba07e502ab9511253eda465d39bf80fcc7cebb37ea40f6268531ab"
+      url "https://github.com/joeyism/technews-tui/releases/download/v0.3.0/technews-tui_0.3.0_Darwin_x86_64.tar.gz"
+      sha256 "a66ec82cfcfaadf90bf3bbf034f38863bb6e9debb6d776d07238ceffe6fbc4b3"
 
       define_method(:install) do
         bin.install "technews-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joeyism/technews-tui/releases/download/v0.2.1/technews-tui_0.2.1_Darwin_arm64.tar.gz"
-      sha256 "11a74267ff8729e6bade6aae1f3f1bd9afb8dd3063a83a54d189532589768cb7"
+      url "https://github.com/joeyism/technews-tui/releases/download/v0.3.0/technews-tui_0.3.0_Darwin_arm64.tar.gz"
+      sha256 "5ea8b79348df50255e65951b12468b57487940d56ed3e325547444b10fd87b19"
 
       define_method(:install) do
         bin.install "technews-tui"
@@ -29,15 +29,15 @@ class TechnewsTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joeyism/technews-tui/releases/download/v0.2.1/technews-tui_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "84924dd7d7c99299d757a4b069812ae286f97276ed44e5e25f3871291a782515"
+      url "https://github.com/joeyism/technews-tui/releases/download/v0.3.0/technews-tui_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "f4db9fc0e2e551d08891101e4bd5ed95bbe245c7a6e3d4e8c580efb98248fb48"
       define_method(:install) do
         bin.install "technews-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joeyism/technews-tui/releases/download/v0.2.1/technews-tui_0.2.1_Linux_arm64.tar.gz"
-      sha256 "e074bdce3e6f0d05511c50b593bc10ac6c5e78b2bd91b4ba1569665dd7c3e9b2"
+      url "https://github.com/joeyism/technews-tui/releases/download/v0.3.0/technews-tui_0.3.0_Linux_arm64.tar.gz"
+      sha256 "83d9d09e8a85820e1908cd0da07ae300a89c3274426d12a91a62ff6c6465218f"
       define_method(:install) do
         bin.install "technews-tui"
       end
